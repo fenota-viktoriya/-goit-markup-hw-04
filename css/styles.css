@@ -167,7 +167,20 @@ img {
   height: 16px;
   width: 10px;
 }
+.header-icon-hover {
+  display: block;
+}
 
+.header-icon-hover:hover .icon,
+.header-icon-hover:focus .icon {
+  fill: var(--accent-text-color);
+}
+.header-mail:focus,
+.header-mail:hover,
+.header-tel:focus,
+.header-tel:hover {
+  color: var(--accent-text-color);
+}
 /*герой*/
 
 .section-hero {
@@ -349,13 +362,13 @@ img {
 .cocial-media-item {
   display: flex;
 }
-.cocial-media-item:hover,
-.cocial-media-item:focus {
+.cocial-link:hover,
+.cocial-link:focus {
   border-radius: 50%;
   background-color: var(--accent-text-color);
 }
-.cocial-media-item:hover .cocial-media-icon-team,
-.cocial-media-item:focus .cocial-media-icon-team {
+.cocial-link:hover .cocial-media-icon,
+.cocial-link:focus .cocial-media-icon {
   fill: var(--second-text-color);
 }
 
@@ -427,9 +440,13 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
-.list-projects:hover {
+.link-project-hover:focus,
+.link-project-hover:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.link-project-hover {
+  display: block;
 }
 
 .title-img {
@@ -479,16 +496,10 @@ img {
 .our-clients-item:not(:last-child) {
   margin-right: 30px;
 }
-.our-clients-item:focus,
-.our-clients-item:hover {
-  border-color: var(--accent-text-color);
-}
-.our-clients-item:focus .our-clients-link,
-.our-clients-item:hover .our-clients-link {
+
+.our-clients-link:focus .our-clients-icon,
+.our-clients-link:hover .our-clients-icon {
   background-color: #afb1b8;
-}
-.our-clients-item:focus .our-clients-icon,
-.our-clients-item:hover .our-clients-icon {
   fill: var(--accent-text-color);
 }
 
