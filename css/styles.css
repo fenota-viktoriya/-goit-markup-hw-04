@@ -72,9 +72,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.icon {
-  fill: var(--icon-color);
-}
+
 /*шапка*/
 .header {
   border-bottom: 1px solid var(--border-header-color);
@@ -145,6 +143,8 @@ img {
 .header-mail,
 .header-tel {
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .menu-auto-list {
@@ -162,10 +162,12 @@ img {
 .i-envelope {
   height: 12px;
   width: 16px;
+  fill: currentColor;
 }
 .i-smartphone {
   height: 16px;
   width: 10px;
+  fill: currentColor;
 }
 .header-icon-hover {
   display: block;
