@@ -514,6 +514,7 @@ img {
 }
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -551,7 +552,6 @@ img {
   flex-wrap: wrap;
   width: 260px;
   height: 80px;
-  padding-top: 12px;
 }
 .footer-left {
   display: flex;
