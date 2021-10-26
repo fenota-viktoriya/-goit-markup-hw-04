@@ -15,6 +15,8 @@
   --border-header-color: #ececec;
   --border-portfolio-color: #eeeeee;
   --icon-color: #757575;
+  --icon-background: #f5f4fa;
+  --icon-color-second: #afb1b8;
 }
 
 body {
@@ -277,15 +279,19 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.benefits-icons {
+.benefits-block {
   display: flex;
-
-  width: 270px;
-  height: 120px;
-  padding: 25px 100px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
+  width: 100%;
+  height: 120px;
+  background-color: var(--icon-background);
   border-radius: 4px;
+}
+.benefits-icons {
+  width: 70px;
+  height: 70px;
 }
 
 /*чем мы занимаемся*/
@@ -329,10 +335,10 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .staff {
+  width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+
   background-color: var(--main-background-color);
 }
 .team-title {
@@ -358,36 +364,35 @@ img {
 .cocial-media {
   display: flex;
   justify-content: center;
-  width: 206px;
+  width: 270px;
   height: 44px;
 }
 .cocial-media-item {
-  display: flex;
+  width: 44px;
+  height: 44px;
 }
-.cocial-link:hover,
-.cocial-link:focus {
-  border-radius: 50%;
-  background-color: var(--accent-text-color);
-}
-.cocial-link:hover .cocial-media-icon,
-.cocial-link:focus .cocial-media-icon {
-  fill: var(--second-text-color);
-}
-
-.cocial-media-icon-team {
-  fill: #afb1b8;
-}
-
 .cocial-media-item:not(:last-child) {
   margin-right: 10px;
 }
-.cocial-media-icon {
+.cocial-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  padding: 12px 12px 12px 12px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  color: var(--icon-color-second);
+}
+.cocial-link:hover,
+.cocial-link:focus {
+  color: var(--second-title-color);
+  background-color: var(--accent-text-color);
+}
+.cocial-media-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /*page2*/
@@ -481,41 +486,32 @@ img {
 
 .our-clients-link {
   display: flex;
-  height: 60px;
-  width: 106px;
+  align-items: center;
+  justify-content: center;
 }
 
 .our-clients-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-
+  border: 1px solid var(--icon-color-second);
   border-radius: 4px;
+  color: var(--icon-color-second);
 }
+
 .our-clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-clients-link:focus .our-clients-icon,
-.our-clients-link:hover .our-clients-icon {
-  background-color: #afb1b8;
-  fill: var(--accent-text-color);
-}
-
 .our-clients-link:focus,
 .our-clients-link:hover {
+  color: var(--accent-text-color);
   border-color: var(--accent-text-color);
 }
 
 .our-clients-icon {
-  display: flex;
   width: 106px;
   height: 60px;
-  /*padding: (16px, 32px, 16px, 32px);*/
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 /*футер*/
@@ -526,10 +522,11 @@ img {
 }
 
 .footer {
-  background-color: var(--first-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--first-background-color);
 }
+
 .footer-flex {
   display: flex;
   align-items: baseline;
@@ -593,4 +590,7 @@ img {
 .footer-cocial-item {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-cocial-media-list {
+  display: flex;
 }
